@@ -1,10 +1,11 @@
 import './App.css'
+import logo from "./assets/react.svg"
 
 function App() {
 
   return (
     <main>
-        <img src="src/assets/react-logo.png" width="40px" />
+        <img src={logo} width="40px" />
         
         <h1>Fun facts about React</h1>
         <ul>
