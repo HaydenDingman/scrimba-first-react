@@ -5,7 +5,7 @@ function App() {
 
   return (
     <main>
-        <img src={logo} width="40px" />
+        <img src={logo} width="40px" alt="React logo" />
         
         <h1>Fun facts about React</h1>
         <ul>
