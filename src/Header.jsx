@@ -1,13 +1,11 @@
 function Header() {
     return (
-        <header className="header">
-            <img src="src/assets/react.svg" className="nav-logo" alt="React logo" />
+        <header>
             <nav>
-                <ul className="nav-list">
-                    <li className="nav-list-item">Pricing</li>
-                    <li className="nav-list-item">About</li>
-                    <li className="nav-list-item">Contact</li>
-                </ul>
+                <a href="#" className="logo-container">
+                    <img src="src/assets/react.svg" className="logo" alt="React logo" />
+                    <p className="logo-text">ReactFacts</p>
+                </a>
             </nav>
         </header>
     )
