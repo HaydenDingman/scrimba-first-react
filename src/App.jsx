@@ -2,20 +2,47 @@ import './App.css'
 import logo from "./assets/react.svg"
 
 function App() {
-
   return (
-    <main>
-        <img src={logo} width="40px" alt="React logo" />
-        
-        <h1>Fun facts about React</h1>
-        <ul>
-        <li>Was first released in 2013.</li>
-        <li>Was originally created by Jordan Walke.</li>
-        <li>Has well over 100K stars on Github.</li>
-        <li>Is maintained by Meta.</li>
-        <li>Powers thousands of enterprise apps, including mobile apps.</li>
-        </ul>
-    </main>
+        <>
+            <Header />
+            <MainContent />
+            <Footer />
+        </>
+    )
+}
+
+function Header() {
+    return (
+        <header className="header">
+            <img src="src/assets/react.svg" className="nav-logo" alt="React logo" />
+            <nav>
+                <ul className="nav-list">
+                    <li className="nav-list-item">Pricing</li>
+                    <li className="nav-list-item">About</li>
+                    <li className="nav-list-item">Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+
+function MainContent() {
+    return (
+        <main>
+            <h1>Reasons I am excited to learn React</h1>
+            <ol>
+                <li>React is a popular library, so I will be able to fit in with all the coolest devs out there! 😎</li>
+                <li>I am more likely to get a job as a front end developer if I know React</li>
+            </ol>
+        </main>
+    )
+}
+
+function Footer() {
+    return (
+        <footer>
+            <small>© 2024 Ziroll development. All rights reserved.</small>
+        </footer>
     )
 }
 
