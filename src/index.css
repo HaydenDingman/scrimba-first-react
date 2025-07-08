@@ -5,14 +5,26 @@ a {
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
+    height: 100vh;
 }
 
-header {
+.root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
     background-color: #21222A;
     height: 20vh;
     max-height: 5.5em;
     display: flex;
     align-items: center;
+}
+
+footer {
+  margin-top: auto;
 }
 
 .logo-container {
@@ -32,3 +44,35 @@ header {
     font-size: 1.5rem;
     margin: 0;
 }
+
+small {
+  color: #61DAFB;
+  margin-left: 2em;
+}
+
+main {
+  background-color: #282D35;
+  flex: 1;
+  padding-left: 2em;
+  color: #FFFFFF;
+
+  background-image: url("src/assets/react-half.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:contain;
+}
+
+main > h1 {
+  margin-bottom: 3rem;
+  margin-top: 3.5rem;
+}
+
+li {
+  margin: 1.5rem 0;
+}
+
+li::marker {
+    color: #61DAFB;
+    font-size: 1.5rem;
+}
+
